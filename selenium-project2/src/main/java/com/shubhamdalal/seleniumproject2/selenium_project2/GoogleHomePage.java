@@ -15,6 +15,7 @@ public class GoogleHomePage {
 
     public void enterSearchQuery(String query) {
         WebElement searchInput = driver.findElement(searchBox);
+        System.out.println("Entering the values to input field...");
         searchInput.sendKeys(query);
     }
 
